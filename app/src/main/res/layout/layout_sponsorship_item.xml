@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/margin_padding_12"
+    android:translationZ="@dimen/margin_padding_12"
+    android:layout_marginEnd="@dimen/margin_padding_8"
+    app:cardElevation="@dimen/margin_padding_8"
+    android:id="@+id/materialCardView"
+    android:backgroundTint="@color/gray_6"
+    android:layout_marginBottom="@dimen/margin_padding_16"
+    app:rippleColor="@android:color/transparent"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/margin_padding_24"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#33000000"
+                android:elevation="@dimen/margin_padding_4"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:id="@+id/image"
+                android:src="@drawable/cacao" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="@dimen/margin_padding_4"
+                android:text="Available"
+                android:paddingVertical="@dimen/margin_padding_8"
+                android:paddingHorizontal="@dimen/margin_padding_12"
+                android:textColor="@color/white"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/margin_padding_16"
+                android:layout_marginEnd="@dimen/margin_padding_16"
+                android:background="@drawable/textview_background"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Coffee Trade"
+            android:layout_marginTop="@dimen/margin_padding_12"
+            android:id="@+id/tradeName"
+            android:layout_marginHorizontal="@dimen/margin_padding_16"
+            android:textColor="@color/green"
+            android:fontFamily="@font/roboto_bold_700"
+            android:textSize="@dimen/txt_size_16"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="@dimen/txt_size_16"
+            android:layout_marginVertical="@dimen/txt_size_16"
+            android:layout_height="@dimen/margin_padding_1"
+            android:background="@color/gray_4"/>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="@dimen/txt_size_16"
+            android:layout_height="match_parent">
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Start Date"
+                    android:textSize="@dimen/text_size_14"
+                    android:fontFamily="@font/roboto_regular_400"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="27th Dec 2021"
+                    android:layout_marginTop="@dimen/margin_padding_4"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:id="@+id/startDate"
+                    android:textSize="@dimen/txt_size_16"
+                    android:fontFamily="@font/roboto_regular_400"
+                    android:textColor="@color/black"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="@dimen/margin_padding_12"
+                    android:paddingVertical="@dimen/margin_padding_8"
+                    android:text="Trade Commodity"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_14"
+                    android:layout_marginTop="@dimen/margin_padding_16"
+                    android:background="@drawable/textview_background2"/>
+
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:textAlignment="textEnd"
+                    android:text="End Date"
+                    android:textSize="@dimen/text_size_14"
+                    android:fontFamily="@font/roboto_regular_400"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:textAlignment="textEnd"
+                    android:text="27th Dec 2021"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:id="@+id/endDate"
+                    android:layout_marginTop="@dimen/margin_padding_4"
+                    android:textSize="@dimen/txt_size_16"
+                    android:fontFamily="@font/roboto_regular_400"
+                    android:textColor="@color/black"/>
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:paddingHorizontal="@dimen/margin_padding_12"
+                    android:paddingVertical="@dimen/margin_padding_8"
+                    android:text="More..."
+                    android:textColor="@color/green"
+                    android:textSize="@dimen/text_size_14"
+
+                    android:layout_marginTop="@dimen/margin_padding_16"
+                    android:background="@drawable/textview_background3"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+
+
+
+
+</com.google.android.material.card.MaterialCardView>

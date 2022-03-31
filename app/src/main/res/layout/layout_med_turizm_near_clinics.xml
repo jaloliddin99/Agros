@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background_white_corner_12"
+    android:padding="@dimen/margin_padding_8"
+    android:layout_marginTop="@dimen/margin_padding_12dp"
+    android:backgroundTint="@color/grey"
+    android:layout_height="wrap_content">
+
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:cardCornerRadius="@dimen/margin_padding_8"
+        app:cardElevation="0dp">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/human_image"
+            android:scaleType="centerCrop"/>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="@dimen/margin_padding_12dp"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alieve Sarvinoz"
+            android:textColor="@color/black"
+            android:textSize="@dimen/txt_size_15"
+            android:fontFamily="@font/roboto_medium_500"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="г. Ташкент, Узбекистан"
+            android:drawableStart="@drawable/ic_location_sma"
+            android:drawablePadding="6dp"
+            android:layout_marginTop="@dimen/margin_padding_8"
+            android:textColor="#666F75"
+            android:textSize="12sp"
+            android:fontFamily="@font/roboto_regular_400"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4 km"
+            android:drawablePadding="6dp"
+            android:paddingHorizontal="@dimen/margin_padding_4"
+            android:paddingVertical="2dp"
+            android:background="@drawable/drawable_4dp_corner"
+            android:backgroundTint="@color/dark_grey"
+            android:layout_marginTop="@dimen/margin_padding_8"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:fontFamily="@font/roboto_medium_500"/>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

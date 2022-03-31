@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="fragment.boarding.FragmentOnBoarding"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.viewpager.widget.ViewPager
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/viewPager"
+        android:elevation="@dimen/margin_padding_4"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp" />
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:animateLayoutChanges="true"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginHorizontal="@dimen/margin_padding_16"
+        android:elevation="@dimen/margin_padding_8"
+        android:layout_marginBottom="@dimen/margin_padding_32"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="Next"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_18"
+            android:fontFamily="@font/roboto_medium_500"
+            android:id="@+id/nextDoneTextView"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Skip"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_18"
+            android:fontFamily="@font/roboto_medium_500"
+            android:id="@+id/skipTextView"/>
+
+
+        <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
+            android:id="@+id/dots_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            app:dotsColor="#65555555"
+            app:dotsCornerRadius="6dp"
+            app:dotsSize="@dimen/margin_padding_12"
+            android:elevation="@dimen/margin_padding_8"
+            app:dotsSpacing="4dp"
+            android:layout_centerInParent="true"
+            app:dotsWidthFactor="2.5"
+            app:selectedDotColor="@color/white"
+            app:progressMode="true"
+            />
+
+
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

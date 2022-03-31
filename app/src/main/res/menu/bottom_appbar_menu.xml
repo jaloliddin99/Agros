@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:id="@+id/fragmentSponsorship"
+        android:title="Investment"
+        android:icon="@drawable/img"/>
+
+
+<!--    <item android:id="@+id/fragmentCollaboration"-->
+<!--        android:title="Collaboration"-->
+<!--        android:icon="@drawable/img_1"/>-->
+
+    <item android:id="@+id/fragmentRenting"
+        android:title="Ranting"
+        android:icon="@drawable/img_2"/>
+
+    <item android:id="@+id/fragmentMarketplace"
+        android:title="Marketplace"
+        android:icon="@drawable/img_4"/>
+
+    <item
+        android:title=""/>
+
+
+
+</menu>

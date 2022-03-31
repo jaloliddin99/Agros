@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/boarding_navigation"
+    app:startDestination="@id/fragmentOnBoarding2">
+
+
+    <fragment
+        android:id="@+id/fragmentOnBoarding2"
+        android:name="com.abdullaev.smartagro.fragment.boarding.FragmentOnBoarding"
+        android:label="FragmentOnBoarding" />
+</navigation>

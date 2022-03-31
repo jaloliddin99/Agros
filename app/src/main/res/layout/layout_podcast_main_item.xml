@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:elevation="0dp"
+    app:cardElevation="0dp"
+    android:id="@+id/materialCardView"
+    android:layout_marginVertical="@dimen/margin_padding_16"
+    android:layout_marginStart="@dimen/margin_padding_16"
+    android:translationZ="@dimen/margin_padding_4"
+    android:backgroundTint="@color/white"
+    app:rippleColor="@android:color/transparent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/margin_padding_4"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="164dp"
+            android:id="@+id/imageView"
+            android:src="@drawable/test_news_image"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            app:layout_constraintTop_toBottomOf="@id/imageView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            android:text="Journeys insocial Innovation"
+            android:layout_marginEnd="@dimen/margin_padding_16"
+            android:textSize="@dimen/txt_size_16"
+            android:textColor="@color/black"
+            android:fontFamily="@font/roboto_regular_400"
+            android:layout_marginTop="@dimen/margin_padding_8"/>
+
+        <TextView
+            app:layout_constraintTop_toBottomOf="@id/textView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="12.07.2021"
+            android:layout_marginEnd="@dimen/margin_padding_16"
+            android:textSize="12sp"
+            android:layout_marginBottom="@dimen/margin_padding_8"
+            android:textColor="@color/gray_3"
+            android:layout_marginTop="@dimen/margin_padding_4"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

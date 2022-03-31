@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/fragmentSponsorship">
+
+    <fragment
+        android:id="@+id/fragmentSponsorship"
+        android:name="com.abdullaev.smartagro.fragment.sponsorship.FragmentSponsorship"
+        android:label="fragment_sponsorship"
+        tools:layout="@layout/fragment_sponsorship" >
+        <action
+            android:id="@+id/action_fragmentSponsorship_to_fragmentSponsorshipDisplay"
+            app:destination="@id/fragmentSponsorshipDisplay" />
+        <action
+            android:id="@+id/action_fragmentSponsorship_to_mapsFragment"
+            app:destination="@id/mapsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentCollaboration"
+        android:name="com.abdullaev.smartagro.fragment.colloboration.FragmentCollaboration"
+        android:label="fragment_colloboration"
+        tools:layout="@layout/fragment_colloboration" />
+
+    <fragment
+        android:id="@+id/fragmentFarmManagement"
+        android:name="com.abdullaev.smartagro.fragment.manegement.FragmentFarmManagement"
+        android:label="fragment_farm_management"
+        tools:layout="@layout/fragment_farm_management" />
+
+    <action android:id="@+id/action_global_farm_management"
+        app:destination="@+id/fragmentFarmManagement"/>
+
+
+    <fragment
+        android:id="@+id/fragmentRenting"
+        android:name="com.abdullaev.smartagro.fragment.renting.FragmentRenting"
+        android:label="fragment_renting"
+        tools:layout="@layout/fragment_renting" >
+        <action
+            android:id="@+id/action_fragmentRenting_to_mapsFragment"
+            app:destination="@id/mapsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentMarketplace"
+        android:name="com.abdullaev.smartagro.fragment.marketplace.FragmentMarketplace"
+        android:label="fragment_marketplace"
+        tools:layout="@layout/fragment_marketplace" >
+        <action
+            android:id="@+id/action_fragmentMarketplace_to_fragmentPodcastDisplay"
+            app:destination="@id/fragmentPodcastDisplay" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentSponsorshipDisplay"
+        android:name="com.abdullaev.smartagro.fragment.sponsorship.FragmentSponsorshipDisplay"
+        android:label="fragment_sponsorship_display"
+        tools:layout="@layout/fragment_sponsorship_display" >
+        <argument
+            android:name="transitionName"
+            app:argType="string" />
+        <argument
+            android:name="isFirst"
+            app:argType="boolean" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentPodcastDisplay"
+        android:name="com.abdullaev.smartagro.fragment.marketplace.FragmentPodcastDisplay"
+        android:label="fragment_podcast_display"
+        tools:layout="@layout/fragment_podcast_display" >
+        <argument
+            android:name="testModel"
+            app:argType="com.abdullaev.smartagro.model.TestModel" />
+    </fragment>
+    <fragment
+        android:id="@+id/mapsFragment"
+        android:name="com.abdullaev.smartagro.fragment.MapsFragment"
+        android:label="fragment_maps"
+        tools:layout="@layout/fragment_maps" />
+</navigation>
